@@ -1,0 +1,33 @@
+{
+    "name": "takeru-yamamoto/laravel-crypt",
+    "description": "Easy to use encryption and decryption for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0",
+    "autoload": {
+        "psr-4": {
+            "LaravelCrypt\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelCrypt\\ServiceProvider"
+            ],
+            "aliases": {
+                "Crypt": "LaravelCrypt\\Facade\\Crypt"
+            }
+        }
+    },
+    "authors": [
+        {
+            "name": "Takeru Yamamoto",
+            "email": "yamamo9150@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2.0",
+        "laravel/framework": "^11.0"
+    },
+    "minimum-stability": "dev"
+}
